@@ -6,10 +6,10 @@ on: #Step 5: Replace lines 2-3. Uncomment lines 4 - 7
 #     workflows: ["Dev-infrastructure (run 2nd)"]
 #     types: [completed]
 env:
-  apiAppName: '' #place app service name here
+  apiAppName: 'billbrownapp' #place app service name here
    
 jobs:
-  APIDeploy:
+ APIDeploy:
     name: Deploy API
     runs-on: 'windows-latest'
     needs: []
