@@ -8,10 +8,10 @@ on: #Step 5: Replace lines 2-3. Uncomment lines 4 – 7
 env:
   infraDirectory:       'tf-infrastructure'
   terraformVersion:     '0.14.11'
-  resourceGroup:        '' #Update
-  storageAccountName:   '' #Update
-  storageContainerName: '' #Update
-  storageKey:           '.tfstate' #Update and name the .tfstate file to reflect environment
+  resourceGroup:        'tstate' #Update
+  storageAccountName:   'tstate28493' #Update
+  storageContainerName: 'asebetich-test-container' #Update
+  storageKey:           'GitHub-FastForge-Infrastructure-All.tfstate' #Update and name the .tfstate file to reflect environment
   variableFile:         '--var-file="dev-env/terraform.tfvars"' #Change the terraform folder location to reflect the environment if applicable
   subscription_id:      ${{ secrets.subscription_id }}
   client_id:            ${{ secrets.client_id }}
